@@ -8,9 +8,6 @@ This repository serves as the central hub when we want to work together with our
 
 Navigate to our documentation: [Home Page](index.md)
 
-> [!IMPORTANT]
-> Please read carefully the guidelines outlined in the [Getting Started](xref:gettingStarted)
-
 ## Why Documentation Matters
 
 Documentation provides a shared understanding and knowledge base for our team and our customers. It serves as a reference point, enabling us to:
@@ -24,10 +21,9 @@ Documentation provides a shared understanding and knowledge base for our team an
 We encourage all team members to actively contribute to our documentation efforts.
 
 > [!NOTE]
-> Of course, it should be clear that we are doing this effort as part of our deliverables, and hence it should be clear this is categorized as **engineering work (billable)**.
+> Every new project **must have** basic documentation provided, and it is imperative that sales account for the effort required during the offering phase.
 
-Want to contribute? Check out [Contributing to the project documentation](xref:contributing)
-
+Want to contribute? 
  Here's how you can get involved:
 
 1. **Collaborate with Customers:** Engage with our users to gather insights and feedback. Their input is invaluable in creating user-friendly documentation.
@@ -42,17 +38,17 @@ Want to contribute? Check out [Contributing to the project documentation](xref:c
 > For Skyline employees: Please include a link from [InternalDocs - ProjectDocs](https://internaldocs.skyline.be/Projects/Projects.html) to this repository
 
 1. Follow the steps described at [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
-1. While creating the new repository, take into account the [GitHub Repository Guidelines](https://docs.dataminer.services/develop/CICD/Skyline%20Communications/Github/Use_Github_Guidelines.html) described in the DataMiner Docs. 
+2. While creating the new repository, take into account the [GitHub Repository Guidelines](https://docs.dataminer.services/develop/CICD/Skyline%20Communications/Github/Use_Github_Guidelines.html) described in the DataMiner Docs. 
     1. Suggested Naming Convention: {customerAcronym}-DOC-NameOfProject
     2. Add/Change the license according to what is agreed with the customer
     3. Add GitHub repository topics: dataminer-doc
-1. Once the repository is cloned, add your custom documentation available in the 'articles' folder. Suggest structure:
+3. Once the repository is cloned, add your custom documentation available in the 'articles' folder. Suggest structure:
     1. overview.md: the purpose of the environment is documented with a high-level overview of the most important components
     2. features.md: key components of the environment, typically with subfolders
     3. infrastructure.md: user-oriented POV explanation of how the environment is built (architecture, database types, failover, etc.)
-1. You can build a test build by following [Contributing to the project documentation](xref:contributing).
-1. When you are happy with your changes, push them to the GitHub repository.
-1. GitHub actions will make an artifact available that you put on your DataMiner which will host this as a static website. If you are interested, follow the steps in the section below.
+4. You can build a test build by following Contributing to the project documentation
+5. When you are happy with your changes, push them to the GitHub repository.
+6. GitHub actions will make an artifact available that you put on your DataMiner which will host this as a static website. If you are interested, follow the steps in the section below.
 
 ### Tips
 
@@ -73,7 +69,7 @@ Our documentation artifacts are generated automatically through GitHub Actions. 
 1. Configure the default file in ISS
     1. Go to Internet Information Services (IIS) Manager
     1. Find the 'Documentation' folder you have added
-    1. In the 'IIS' section, double click on 'Default Document'
+    1. In the 'IIS' section, double-click on 'Default Document'
     1. Include the index.html on the list.
 1. Navigate to 'https://`hostname`/Documentation' to view the website
 

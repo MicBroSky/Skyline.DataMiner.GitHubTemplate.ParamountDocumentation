@@ -1,19 +1,10 @@
 items:
 - name: Overview
-  topicUid: overview
-- name: Features
-  topicUid: features
+  topicUid: overview_overview
   items:
-  - name: Feature 1
-    topicUid: feature1
-  - name: Feature 2
-    topicUid: feature2
-- name: Infrastructure
-  topicUid: infrastructure
-- name: Getting started
-  topicUid: gettingStarted
-  items:
-  - name: Markdown
-    topicUid: markdown
-  - name: Contributing
-    topicUid: contributing
+      - name: Access
+        topicUid: overview_access
+      - name: References
+        topicUid: overview_references
+- name: Deployment
+  topicUid: deployment_deployment
