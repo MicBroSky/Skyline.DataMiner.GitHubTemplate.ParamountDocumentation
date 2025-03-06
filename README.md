@@ -1,12 +1,20 @@
 # Documentation Repository
 
-Welcome to our Documentation Repository! 🚀
+Welcome to our Basic Documentation Project Repository! 🚀
 
 ## Overview
 
-This repository serves as the central hub when we want to work together with our DevOps Professionals on Project Documentation. Clear and comprehensive documentation is crucial for understanding our deliverables, projects, and complex environments. It not only benefits us internally but also plays a vital role in ensuring our customers have a seamless experience and clear understanding of the environment.
+This repository template, aligned with OKR Q1 2025, offers a clear structure and initial content that DevOps professionals can utilize to create fundamental documentation for a delivery project.
 
-Navigate to our documentation: [Home Page](index.md)
+Basic documentation refers to the minimum content required to be considered delivered:
+
+1. An **overview** section containing information about the access mechanism and other technical documentation, typically created during the deployment phase.
+
+2. The **deployment** section includes a description of the high-level architecture and an inventory of the infrastructure.
+
+> [!NOTE]
+> Every new project **must have** basic documentation, and it is imperative that sales account for the effort required during the offering phase.
+
 
 ## Why Documentation Matters
 
@@ -16,62 +24,31 @@ Documentation provides a shared understanding and knowledge base for our team an
 - **Ensure Clarity:** Having a clear overview from the beginning helps us build a strong foundation, reducing confusion and misunderstandings.
 - **Enhance Customer Experience:** Well-documented processes and products empower our customers, enabling them to use our solutions effectively.
 
-## How to Contribute
+## How to use this template
 
-We encourage all team members to actively contribute to our documentation efforts.
-
-> [!NOTE]
-> Every new project **must have** basic documentation provided, and it is imperative that sales account for the effort required during the offering phase.
-
-Want to contribute? 
- Here's how you can get involved:
-
-1. **Collaborate with Customers:** Engage with our users to gather insights and feedback. Their input is invaluable in creating user-friendly documentation.
-
-2. **Add and Update Content:** Contribute by adding new documentation or updating existing content. Whether it's a guide, tutorial, or FAQ, your contributions make a difference.
-
-3. **Review and Improve:** Review existing documentation to identify areas of improvement. Even small edits can enhance clarity and usability.
-
-## How to get started
-
-> [!IMPORTANT]
-> For Skyline employees: Please include a link from [InternalDocs - ProjectDocs](https://internaldocs.skyline.be/Projects/Projects.html) to this repository
+The template is designed to serve as a foundational repository that can later be integrated into our [internal project documentation](https://internaldocs.skyline.be/Projects/Projects.html). Although it may seem redundant at first glance, it’s important to note that the following instructions are intended only for new documentation efforts or when we want to overhaul existing documentation. Ultimately, this process greatly justifies the effort involved:
 
 1. Follow the steps described at [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
-2. While creating the new repository, take into account the [GitHub Repository Guidelines](https://docs.dataminer.services/develop/CICD/Skyline%20Communications/Github/Use_Github_Guidelines.html) described in the DataMiner Docs. 
-    1. Suggested Naming Convention: {customerAcronym}-DOC-NameOfProject
-    2. Add/Change the license according to what is agreed with the customer
-    3. Add GitHub repository topics: dataminer-doc
-3. Once the repository is cloned, add your custom documentation available in the 'articles' folder. Suggest structure:
-    1. overview.md: the purpose of the environment is documented with a high-level overview of the most important components
-    2. features.md: key components of the environment, typically with subfolders
-    3. infrastructure.md: user-oriented POV explanation of how the environment is built (architecture, database types, failover, etc.)
-4. You can build a test build by following Contributing to the project documentation
-5. When you are happy with your changes, push them to the GitHub repository.
-6. GitHub actions will make an artifact available that you put on your DataMiner which will host this as a static website. If you are interested, follow the steps in the section below.
+2. The template uses several placeholders between '{{ }}' characters. Find and replace these with the appropriate values for the project being documented.
+> [!IMPORTANT] A special placeholder between _\<PRJID\>_ was used to create the **uid** references of the provided articles. You **must** find and replace all instances of this placeholder with a string that uniquely identifies the project being documented. Ensure that you use only characters permissible for creating UID references (for example, replacing \<PRJID\> with GCPVO123).
+3. Update existing articles or add new ones, ensuring the toc.yml file is properly referencing the new articles.
+4. Build and test the project by using the _Docfx build_ command
+5. When you are confident that the documentation is ready for integration, please follow the instructions below
 
-### Tips
+### How to integrate into internal docs
+1. Follow our guidelines to collaborate on the documentation, which typically requires creating a fork of internal docs
+2. Create a new folder in the Projects directory with a name that intuitively identifies your project
+3. Copy the contents of the _articles_ and _images_ folders from your documentation repository into the new folder in the forked project
+4. Stage all new folders and files so they are ready to commit 
+5. Edit the _toc.yml_ file located in the Project's root folder and add a new section in the correct position, following the alphabetical order of the other projects:
+> -name: Test Project
+> 
+> href: Test Project/articles/toc.yml
 
-1. Change this README, and add a link to your front page so it is easily accessible through GitHub as well.
-1. Add image files to the *images* folder if the file is referencing an image.
-1. Consider using Mermaid for creating diagrams, etc. When creating images using Mermaid, take into account the dark and light themes. Make sure the images are readable in both themes.
-1. Do not create lengthy pages. It is preferred to create smaller pages as the search is performed on page level.
-
-## GitHub Actions and Hosting
-
-We have set up GitHub Actions to automate the building process of our documentation artifacts. Through this automation, we can host a static website (e.g. on IIS) with the content of this repository. This ensures that our documentation is always up-to-date and easily accessible to both our team and users.
-
-Our documentation artifacts are generated automatically through GitHub Actions. When making changes, simply commit your updates to the repository. GitHub Actions will take care of the rest, ensuring our static website is continuously updated. For now, there's no automatic deployment available, so we still need to manually copy the artifacts to a folder under IIS.
-
-1. On your GitHub repository, go to the tab 'Actions'
-1. Download the 'Documentation.zip'
-1. Extract the archive in your DataMiner in the location 'C:\Skyline DataMiner\Webpages\Documentation'. Note the 'Documentation' folder is not available by default and can be created.
-1. Configure the default file in ISS
-    1. Go to Internet Information Services (IIS) Manager
-    1. Find the 'Documentation' folder you have added
-    1. In the 'IIS' section, double-click on 'Default Document'
-    1. Include the index.html on the list.
-1. Navigate to 'https://`hostname`/Documentation' to view the website
+6. Build and test the fork project by using the Docfx build command
+7. Ensure that your new project documentation aligns correctly with existing projects. Make adjustments as needed
+8. Commit the changes and create a pull request to have a final documentation merge into the main branch at internal docs
+> ℹ️ Once the new project has been integrated into the internal docs documentation repository any further addition shall be done by using the internal docs repository, and therefore you are free to delete the initial repository created from this template.
 
 ## Let's Build Something Great Together!
 
