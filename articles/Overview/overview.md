@@ -1,5 +1,5 @@
 ---
-uid: overview_overview
+uid: <PRJID>_overview_overview
 ---
 # About {{PROJECT_NAME}}
 

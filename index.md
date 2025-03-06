@@ -8,5 +8,5 @@ Welcome to the project documentation template.
 
 ## Overview
 
-- [Overview](xref:overview_overview)
-- [Deployment](xref:deployment_deployment)
+- [Overview](xref:<PRJID>_overview_overview)
+- [Deployment](xref:<PRJID>_deployment_deployment)

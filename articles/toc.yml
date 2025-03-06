@@ -1,15 +1,15 @@
 items:
 - name: Overview
-  topicUid: overview_overview
+  topicUid: <PRJID>_overview_overview
   items:
       - name: Access
-        topicUid: overview_access
+        topicUid: <PRJID>_overview_access
       - name: References
-        topicUid: overview_references
+        topicUid: <PRJID>_overview_references
 - name: Deployment
-  topicUid: deployment_deployment
+  topicUid: <PRJID>_deployment_deployment
   items:
       - name: High Level Architecture
-        topicUid: deployment_high_level_architecture
+        topicUid: <PRJID>_deployment_high_level_architecture
       - name: Infrastructure
-        topicUid: deployment_infrastructure
+        topicUid: <PRJID>_deployment_infrastructure

@@ -1,5 +1,5 @@
 ---
-uid: deployment_deployment
+uid: <PRJID>_deployment_deployment
 ---
 
 # High-Level Design Overview
@@ -10,9 +10,9 @@ textual description of the system's components and a package diagram that contai
 ## Textual description
 
 The {{PROJECT_NAME}} project comprises three independent DMS clusters, each configured as detailed below and offering
-specific features outlined in [value delivery](xref:overview_overview).
+specific features outlined in [value delivery](xref:<PRJID>_overview_overview).
 
 ## Alpha Cluster
 Alpha cluster has multiple agents covering London, Brussels, and Washington DC locations. It provides standard monitoring
-and control functionality listed in the [delivery features](xref:overview_overview#delivered-value) section.
+and control functionality listed in the [delivery features](xref:<PRJID>_overview_overview#delivered-value) section.
 

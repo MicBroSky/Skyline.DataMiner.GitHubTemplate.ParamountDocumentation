@@ -1,5 +1,5 @@
 ---
-uid: overview_references
+uid: <PRJID>_overview_references
 ---
 
 ## Internal documentation
