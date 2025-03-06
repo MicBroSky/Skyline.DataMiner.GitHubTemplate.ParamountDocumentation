@@ -8,3 +8,8 @@ items:
         topicUid: overview_references
 - name: Deployment
   topicUid: deployment_deployment
+  items:
+      - name: High Level Architecture
+        topicUid: deployment_high_level_architecture
+      - name: Infrastructure
+        topicUid: deployment_infrastructure

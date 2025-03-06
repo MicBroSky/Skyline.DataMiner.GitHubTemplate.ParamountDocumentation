@@ -21,3 +21,9 @@ There are multiple forms to express the delivered value, following some forms:
 * **Comparative Improvements:** A list of the achieved improvements of any defined KPIs
 * **Customer phrases or outcomes:** Testimonials, use cases, or scenarios describing the success stories and how potential users can benefit
 
+## Revision History
+
+| Revision | Date        | Name     | Comments        |
+|----------|-------------|----------|-----------------|
+| 001      | 26 Nov 2024 | John Doe | Initial Version |
+| 002      | 10 Dic 2024 | John Doe | Added section 2 |
