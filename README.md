@@ -30,20 +30,21 @@ The template is designed to serve as a foundational repository that can later be
 
 1. Follow the steps described at [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
 2. The template uses several placeholders between '{{ }}' characters. Find and replace these with the appropriate values for the project being documented.
-> [!IMPORTANT] A special placeholder between _\<PRJID\>_ was used to create the **uid** references of the provided articles. You **must** find and replace all instances of this placeholder with a string that uniquely identifies the project being documented. Ensure that you use only characters permissible for creating UID references (for example, replacing \<PRJID\> with GCPVO123).
-3. Update existing articles or add new ones, ensuring the toc.yml file is properly referencing the new articles.
+> [IMPORTANT] A special placeholder between _\<PRJID\>_ was used to create the **uid** references of the provided articles. You **must** find and replace all instances of this placeholder with a string that uniquely identifies the project being documented. Ensure that you use only characters permissible for creating UID references (for example, replacing \<PRJID\> with GCPVO123).
+3. Rename the default project name _PRJNAME_ within the Projects and images folders with the name of the new project under documentation
+4. Update existing articles or add new ones, ensuring the toc.yml file is properly referencing the new articles.
 4. Build and test the project by using the _Docfx build_ command
 5. When you are confident that the documentation is ready for integration, please follow the instructions below
 
 ### How to integrate into internal docs
 1. Follow our guidelines to collaborate on the documentation, which typically requires creating a fork of internal docs
 2. Create a new folder in the Projects directory with a name that intuitively identifies your project
-3. Copy the contents of the _articles_ and _images_ folders from your documentation repository into the new folder in the forked project
+3. Copy the contents of the project and images folders from your documentation repository into the new folder in the forked project
 4. Stage all new folders and files so they are ready to commit 
 5. Edit the _toc.yml_ file located in the Project's root folder and add a new section in the correct position, following the alphabetical order of the other projects:
 > -name: Test Project
 > 
-> href: Test Project/articles/toc.yml
+> href: Test Project/toc.yml
 
 6. Build and test the fork project by using the Docfx build command
 7. Ensure that your new project documentation aligns correctly with existing projects. Make adjustments as needed

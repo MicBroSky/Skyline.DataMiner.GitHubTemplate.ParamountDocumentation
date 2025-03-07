@@ -23,6 +23,6 @@ description in case there are multiple DMSs. Below some examples of the typical 
 > authentication method(send me a push or enter a password).
 > * After successful authentication it should start downloading {{VPN_CLIENT}} and install it in your PC, if you don't have it yet.
 > * The {{VPN_CLIENT}} should now indicate that you are connected as following:
-> ![pulse_vpn_client.png](../../../images/_PRJNAME_/pulse_vpn_client.png)
+> ![pulse_vpn_client.png](../../../images/PRJNAME/pulse_vpn_client.png)
 > * After successful VPN connection, RDP to jump servers and then from jump servers you can RDP to any server either under
 >   {{DMS_CLUSTER_NAME}}cluster.

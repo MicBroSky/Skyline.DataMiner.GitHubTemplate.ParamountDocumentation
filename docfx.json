@@ -6,6 +6,8 @@
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
+          "Projects/**.md",
+          "Projects/**/toc.yml",
           "*.md"
         ]
       }
