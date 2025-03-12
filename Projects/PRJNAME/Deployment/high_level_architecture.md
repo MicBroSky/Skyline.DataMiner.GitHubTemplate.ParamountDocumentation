@@ -10,9 +10,9 @@ A high-level architecture outlines the interconnected components and how they in
 ## Components
 As shown in the diagram below, the SOLUTION consists of three different hardware elements, including two DataMiner systems that contain the necessary modules for processing and distributing messages:
 
-![components.png](../../../images/PRJNAME/components.png)
+![components.png](../../images/PRJNAME/components.png)
 
 ## Interactions
 
 In the interaction diagram below, a DataMiner node process query commands from an aggregator in response to external actions from an implemented third-party application UI:
-![interactions.png](../../../images/PRJNAME/interactions.png)
+![interactions.png](../../images/PRJNAME/interactions.png)

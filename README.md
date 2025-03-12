@@ -1,3 +1,4 @@
+<!--TEMPLATE_VERSION=1.0.0-->
 # Documentation Repository
 
 Welcome to our Basic Documentation Project Repository! 🚀
@@ -29,7 +30,7 @@ Documentation provides a shared understanding and knowledge base for our team an
 The template is designed to serve as a foundational repository that can later be integrated into our [internal project documentation](https://internaldocs.skyline.be/Projects/Projects.html). Although it may seem redundant at first glance, it’s important to note that the following instructions are intended only for new documentation efforts or when we want to overhaul existing documentation. Ultimately, this process greatly justifies the effort involved:
 
 1. Follow the steps described at [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
-2. The template uses several placeholders between '{{ }}' characters. Find and replace these with the appropriate values for the project being documented.
+2. The template uses several placeholders between '< >' characters. Find and replace these with the appropriate values for the project being documented.
 > [IMPORTANT] A special placeholder between _\<PRJID\>_ was used to create the **uid** references of the provided articles. You **must** find and replace all instances of this placeholder with a string that uniquely identifies the project being documented. Ensure that you use only characters permissible for creating UID references (for example, replacing \<PRJID\> with GCPVO123).
 3. Rename the default project name _PRJNAME_ within the Projects and images folders with the name of the new project under documentation
 4. Update existing articles or add new ones, ensuring the toc.yml file is properly referencing the new articles.

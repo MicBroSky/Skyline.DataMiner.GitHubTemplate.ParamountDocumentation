@@ -9,7 +9,7 @@ textual description of the system's components and a package diagram that contai
 -->
 ## Textual description
 
-The {{PROJECT_NAME}} project comprises three independent DMS clusters, each configured as detailed below and offering
+The <PRJNAME> project comprises three independent DMS clusters, each configured as detailed below and offering
 specific features outlined in [value delivery](xref:<PRJID>_overview_overview).
 
 ## Alpha Cluster

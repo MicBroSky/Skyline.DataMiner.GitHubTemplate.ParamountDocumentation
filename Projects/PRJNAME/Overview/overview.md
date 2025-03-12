@@ -1,7 +1,7 @@
 ---
 uid: <PRJID>_overview_overview
 ---
-# About {{PROJECT_NAME}}
+# About <PRJNAME>
 
 ## Value proposition
 A value proposition should clearly articulate the benefits and solutions the project brings to its users or stakeholders.
