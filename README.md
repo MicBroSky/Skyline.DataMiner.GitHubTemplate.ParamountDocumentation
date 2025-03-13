@@ -5,7 +5,7 @@ Welcome to our Basic Documentation Project Repository! 🚀
 
 ## Overview
 
-This repository template, aligned with OKR Q1 2025, offers a clear structure and initial content that DevOps professionals can utilize to create fundamental documentation for a delivery project.
+This base repository, aligned with OKR Q1 2025, offers a clear structure and initial content that DevOps professionals can utilize to create fundamental documentation for a delivery project.
 
 Basic documentation refers to the minimum content required to be considered delivered:
 
@@ -13,7 +13,7 @@ Basic documentation refers to the minimum content required to be considered deli
 
 2. The **deployment** section includes a description of the high-level architecture and an inventory of the infrastructure.
 
-> [!NOTE]
+> [NOTE]
 > Every new project **must have** basic documentation, and it is imperative that sales account for the effort required during the offering phase.
 
 
@@ -25,12 +25,13 @@ Documentation provides a shared understanding and knowledge base for our team an
 - **Ensure Clarity:** Having a clear overview from the beginning helps us build a strong foundation, reducing confusion and misunderstandings.
 - **Enhance Customer Experience:** Well-documented processes and products empower our customers, enabling them to use our solutions effectively.
 
-## How to use this template
+## How to use this repository
 
-The template is designed to serve as a foundational repository that can later be integrated into our [internal project documentation](https://internaldocs.skyline.be/Projects/Projects.html). Although it may seem redundant at first glance, it’s important to note that the following instructions are intended only for new documentation efforts or when we want to overhaul existing documentation. Ultimately, this process greatly justifies the effort involved:
+The repository is designed to serve as a foundational content structure that can later be integrated into our [internal project documentation](https://internaldocs.skyline.be/Projects/Projects.html). Although it may seem redundant at first glance, it’s important to note that the following instructions are intended only for new documentation efforts or when we want to overhaul existing documentation. Ultimately, this process greatly justifies the effort involved:
 
-1. Follow the steps described at [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
-2. The template uses several placeholders between '< >' characters. Find and replace these with the appropriate values for the project being documented.
+1. Clone this repository to establish the documentation structure, which will later be integrated into the internal-docs repository.
+> [NOTE] After integrating the initial content into internal-docs, this cloned repository should no longer be used for future changes. Instead, all modifications should be made directly within internal-docs.
+2. The repository uses several placeholders between '< >' characters. Find and replace these with the appropriate values for the project being documented.
 > [IMPORTANT] A special placeholder between _\<PRJID\>_ was used to create the **uid** references of the provided articles. You **must** find and replace all instances of this placeholder with a string that uniquely identifies the project being documented. Ensure that you use only characters permissible for creating UID references (for example, replacing \<PRJID\> with GCPVO123).
 3. Rename the default project name _PRJNAME_ within the Projects and images folders with the name of the new project under documentation
 4. Update existing articles or add new ones, ensuring the toc.yml file is properly referencing the new articles.
@@ -50,7 +51,6 @@ The template is designed to serve as a foundational repository that can later be
 6. Build and test the fork project by using the Docfx build command
 7. Ensure that your new project documentation aligns correctly with existing projects. Make adjustments as needed
 8. Commit the changes and create a pull request to have a final documentation merge into the main branch at internal docs
-> ℹ️ Once the new project has been integrated into the internal docs documentation repository any further addition shall be done by using the internal docs repository, and therefore you are free to delete the initial repository created from this template.
 
 ## Let's Build Something Great Together!
 
