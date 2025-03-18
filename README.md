@@ -34,6 +34,7 @@ The repository is designed to serve as a foundational content structure that can
 2. The repository uses several placeholders between '< >' characters. Find and replace these with the appropriate values for the project being documented.
 > [IMPORTANT] A special placeholder between _\<PRJID\>_ was used to create the **uid** references of the provided articles. You **must** find and replace all instances of this placeholder with a string that uniquely identifies the project being documented. Ensure that you use only characters permissible for creating UID references (for example, replacing \<PRJID\> with GCPVO123).
 3. Rename the default project name _PRJNAME_ within the Projects and images folders with the name of the new project under documentation
+> [IMPORTANT] If you want to use a folder name with multiple words, use an underscore "_" character (e.g., My_Great_Project) instead of space to avoid problems referencing the materials (e.g., images) with Markdown links. If spaces are preferred, you may need to wrap the path between '<' and '>' characters or use %20 to escape the spaces
 4. Update existing articles or add new ones, ensuring the toc.yml file is properly referencing the new articles.
 4. Build and test the project by using the _Docfx build_ command
 5. When you are confident that the documentation is ready for integration, please follow the instructions below
