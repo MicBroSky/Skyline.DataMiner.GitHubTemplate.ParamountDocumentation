@@ -11,7 +11,7 @@ in the following folders:
 
 | Folder                                                                               | Content                                                                             |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [10-Requirements](https://skylinebe.sharepoint.com/:f:/s/ProjectData/<PROJECT_DATA>) | Contains different technical documents for the definition of connectors, LCAs, etc. |
+| [Project Data](https://skylinebe.sharepoint.com/:f:/s/ProjectData/Egj8jotFDfpGo_QaxV_vWqABAg9WUmoPOk1eWhXVasgT9Q?e=6b6bxn) | General project data documents. |
 | [15.3-SOW](https://skylinebe.sharepoint.com/:f:/s/ProjectData/<PROJECT_DATA>)        | All the versions of the Statement of Work that were discussed with the customer.    |
 | [30-Planning](https://skylinebe.sharepoint.com/:f:/s/ProjectData/<PROJECT_DATA>)     | The discussed value delivery plan.                                                  |
 
