@@ -1,10 +1,10 @@
 ---
-uid: <PRJID>_deployment_infrastructure
+uid: Paramount_deployment_infrastructure
 ---
 
 # Production
 
-The infrastructure for Paramount Production is built around a single Dataminer cluster, comprising 16 DMAs.
+The infrastructure for Paramount Production is built around a single Dataminer cluster, comprising 16 DMAs. The DMAs with "LMC" in the name are located in their London location while the DMAs with "CCC" in the name are located in their New York location. 
 
 | ID       | DMA Name   | Location       | Host       |FQDN | Virtual IP  | IP       |
 |----------|------------|----------------|------------|----------|----------|----------|
@@ -16,14 +16,18 @@ The infrastructure for Paramount Production is built around a single Dataminer c
 | 123305 | LMC-DMA-PRD-06 | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | lmc-dma-prd-06.mtvn.ad.viacom.com | 10.144.66.209 |10.144.66.206 |
 | 123310 | LMC-DMA-PRD-07 | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | lmc-dma-prd-07.mtvn.ad.viacom.com | 10.144.66.210 |10.144.66.208 |
 | 123310 | LMC-DMA-PRD-08 | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | lmc-dma-prd-08.mtvn.ad.viacom.com | 10.144.66.210 |10.144.66.209 |
+| 4613 | LMC-CTL-PRD-01 | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | lmc-ctl-prd-01.mtvn.ad.viacom.com |10.144.66.251|10.144.66.249 |
+| 4613 | LMC-CTL-PRD-02 | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | lmc-ctl-prd-02.mtvn.ad.viacom.com |10.144.66.251|10.144.66.250 |
 | 123306 | CCC-DMA-PRD-01A | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-01A.mtvn.ad.viacom.com| 10.165.66.185 |10.165.66.186 |
 | 123306 | CCC-DMA-PRD-01B | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-01B.mtvn.ad.viacom.com | 10.165.66.185 |10.165.66.187 |
 | 123307 | CCC-DMA-PRD-02A | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-02A.mtvn.ad.viacom.com | 10.165.66.188 |10.165.66.189 |
 | 123307 | CCC-DMA-PRD-02B | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-02B.mtvn.ad.viacom.com | 10.165.66.188 |10.165.66.190 |
 | 123308 | CCC-DMA-PRD-03A | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-03A.mtvn.ad.viacom.com | 10.165.66.191 |10.165.66.192 |
 | 123308 | CCC-DMA-PRD-03B | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-03B.mtvn.ad.viacom.com | 10.165.66.191 |10.165.66.193 |
-| 4613 | LMC-CTL-PRD-01 | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | lmc-ctl-prd-01.mtvn.ad.viacom.com |10.144.66.251|10.144.66.249 |
-| 4613 | LMC-CTL-PRD-02 | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | lmc-ctl-prd-02.mtvn.ad.viacom.com |10.144.66.251|10.144.66.250 |
+| 123308 | CCC-DMA-PRD-04A | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-04A.mtvn.ad.viacom.com | 10.165.66.194 |10.165.66.195 |
+| 123308 | CCC-DMA-PRD-04B | ccc-ny-habvsvcs1.mtvn.ad.viacom.com | vpn.gb.vimn.com/vendormfa-okta | CCC-DMA-PRD-04B.mtvn.ad.viacom.com | 10.165.66.194 |10.165.66.196 |
+
+You can also see a potentially more up to date cluster formation on [CDMR](https://cdmr.skyline.be/monitoring/element/52/4563/data/Cluster).
 
 
 # Storage Infrastructure
@@ -48,6 +52,8 @@ We can either describe the storage cluster's location and reference other docume
 | SLDMADB (CCC-DMA-PRD-02B) | 10.165.66.190 |
 | SLDMADB (CCC-DMA-PRD-03A) | 10.165.66.192 |
 | SLDMADB (CCC-DMA-PRD-03B) | 10.165.66.193 |
+| SLDMADB (CCC-DMA-PRD-04A) | 10.165.66.195 |
+| SLDMADB (CCC-DMA-PRD-04B) | 10.165.66.196 |
 | SLDMADB (LMC-CTL-PRD-01) | 10.144.66.249 |
 | SLDMADB (LMC-CTL-PRD-02) | 10.144.66.250 |
 
@@ -58,6 +64,8 @@ The infrastructure for Paramount Staging is built around a single Dataminer clus
 | ID       | DMA Name   | IP       |
 |----------|------------|----------|
 | 123304 | lmc-dma-stg-02 | 10.144.66.197 |
+
+You can also see a potentially more up to date cluster formation on [CDMR](https://cdmr.skyline.be/monitoring/element/52/5763/data/Cluster).
 
 # Storage Infrastructure
 

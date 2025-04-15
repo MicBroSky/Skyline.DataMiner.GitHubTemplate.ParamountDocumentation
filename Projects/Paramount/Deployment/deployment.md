@@ -1,5 +1,5 @@
 ---
-uid: <PRJID>_deployment_deployment
+uid: Paramount_deployment_deployment
 ---
 
 # High-Level Design Overview
@@ -10,11 +10,11 @@ textual description of the system's components and a package diagram that contai
 ## Staging and Production
 
 The Paramount project comprises of two DMS clusters, Production and Staging, each configured as detailed below and offering
-specific features outlined in [value delivery](xref:<PRJID>_overview_overview).
+specific features outlined in [value delivery](xref:Paramount_overview_overview).
 
 ## Production
-The DataMiner System (DMS) contains 8 agents configured in a failover pair.   It provides standard monitoring
-and control functionality listed in the [delivery features](xref:<PRJID>_overview_overview#delivered-value) section.
+The DataMiner System (DMS) contains 9 agents with each in a failover pair. It provides standard monitoring
+and control functionality listed in the [delivery features](xref:Paramount_overview_overview#delivered-value) section.
 
 ## Staging
-The DataMiner System (DMS) contains a single agent. It is used for testing new protocol versions, elements, and other configurations listed in the [delivery features](xref:<PRJID>_overview_overview#delivered-value) section.
+The DataMiner System (DMS) contains a single agent. It is used for testing new protocol versions, elements, and other configurations listed in the [delivery features](xref:Paramount_overview_overview#delivered-value) section.

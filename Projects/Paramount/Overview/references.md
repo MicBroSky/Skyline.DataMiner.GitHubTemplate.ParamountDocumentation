@@ -1,5 +1,5 @@
 ---
-uid: <PRJID>_overview_references
+uid: Paramount_overview_references
 ---
 
 ## Internal documentation

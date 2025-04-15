@@ -1,15 +1,15 @@
 items:
 - name: Overview
-  topicUid: <PRJID>_overview_overview
+  topicUid: Paramount_overview_overview
   items:
       - name: Access
-        topicUid: <PRJID>_overview_access
+        topicUid: Paramount_overview_access
       - name: References
-        topicUid: <PRJID>_overview_references
+        topicUid: Paramount_overview_references
 - name: Deployment
-  topicUid: <PRJID>_deployment_deployment
+  topicUid: Paramount_deployment_deployment
   items:
       - name: High Level Architecture
-        topicUid: <PRJID>_deployment_high_level_architecture
+        topicUid: Paramount_deployment_high_level_architecture
       - name: Infrastructure
-        topicUid: <PRJID>_deployment_infrastructure
+        topicUid: Paramount_deployment_infrastructure
